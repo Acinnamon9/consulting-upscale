@@ -1,7 +1,11 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
   const navLinks = [
     { name: "Services", href: "#services" },
     { name: "Why Us", href: "#why-us" },
@@ -21,6 +25,8 @@ const Navbar = () => {
             fill
             className="object-contain"
             priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+
           />
         </Link>
 
@@ -37,18 +43,29 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* External Page Button */}
-        <div>
-          <Link
-            href="/book"
-            style={{ backgroundColor: "rgb(212, 175, 55)" }}
-            className="hover:opacity-90 text-black px-6 py-3 text-xs font-bold uppercase tracking-widest rounded-sm transition-all shadow-sm"
-          >
-            Book Consultation
-          </Link>
-        </div>
+        {/* Hamburger */}
+
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden"
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
       </div>
-    </nav>
+
+      {/* External Page Button */}
+      <div>
+        <Link
+          href="/book"
+          style={{ backgroundColor: "rgb(212, 175, 55)" }}
+          className="hover:opacity-90 text-black px-6 py-3 text-xs font-bold uppercase tracking-widest rounded-sm transition-all shadow-sm"
+        >
+          Book Consultation
+        </Link>
+      </div>
+
+    </nav >
   );
 };
 

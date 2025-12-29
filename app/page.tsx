@@ -33,11 +33,13 @@ export default function Home() {
             Discover Our <span className="text-yellow-500">Approach</span>
           </h1>
           {/* Video Placeholder Box from PDF */}
-          <div className="relative w-full max-w-2xl mx-auto aspect-video bg-zinc-900 border-yellow-400 shadow-[0_0_30px_rgba(202,138,4,0.3)] flex items-center justify-center mb-10 group cursor-pointer min-h-150 min-w-250 border-30">
+          <div className="relative w-full max-w-2xl mx-auto aspect-video bg-zinc-900 border-yellow-400 shadow-[0_0_30px_rgba(202,138,4,0.3)] flex items-center justify-center mb-10 group cursor-pointer min-h-150 min-w-250 border-30 rounded-4xl">
             {/* <div className="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform"> */}
-            <video controls width="1280" >
-              <source src="assets/Woman in business.mp4" type="video/mp4" />
-            </video>
+            <div className="rounded-2xl">
+              <video controls width="1280" className="object-cover">
+                <source src="assets/Woman in business.mp4" type="video/mp4" />
+              </video>
+            </div>
 
             {/* </div> */}
           </div>
