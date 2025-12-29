@@ -1,5 +1,5 @@
 import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/Footer';
+import Footer from '@/app/components/footer';
 
 export default function Home() {
   return (
@@ -7,11 +7,23 @@ export default function Home() {
       <Navbar />
 
       {/* --- HERO SECTION --- */}
-      <section className="" >
-        <div>
-          <h1>
-            We Help Businesses Pre-Qualify For Financing & Build Business Credit :
-          </h1>
+      <section className="bg-gray-950 py-20 md:py-32 text-white">
+        <div className="max-w-7xl mx-auto px-6 text-center flex">
+          <div className='left-part ' >
+
+            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-shadow-">
+              We Help Businesses Pre-Qualify For Financing & Build Business Credit
+              <span className="text-yellow-500">:</span>
+            </h1>
+            <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+              Unlock your business's full potential with our expert guidance in
+              securing funding and establishing a strong credit profile.
+            </p></div>
+          <div className='right-part' >
+            <button className="mt-10 bg-yellow-600 text-black font-bold py-3 px-8 uppercase tracking-widest hover:bg-yellow-500 transition-colors">
+              Get Started Today
+            </button>
+          </div>
         </div>
       </section>
 
@@ -104,7 +116,7 @@ export default function Home() {
 
           {/* Corporate 101 Main Item (Centerpiece from PDF) */}
           <div className="mb-16">
-            <div className="bg-zinc-900 p-10 border border-yellow-600 text-center max-w-lg mx-auto shadow-[0_0_40px_rgba(202,138,4,0.1)]">
+            <div className="bg-zinc-900 p-10 border border-yellow-600 text-center max-w-lg mx-auto shadow-[0_0_40px_rgba(202,138,4,0.1)">
               <h3 className="text-2xl font-bold text-white mb-2">Corporate 101</h3>
               <div className="text-4xl font-extrabold text-yellow-500 my-4">$1,500</div>
               <ul className="text-left text-gray-400 text-sm space-y-3 mb-8 max-w-xs mx-auto">
