@@ -7,38 +7,41 @@ export default function Home() {
       <Navbar />
 
       {/* --- HERO SECTION --- */}
-      <section className="bg-gray-950 py-20 md:py-32 text-white">
-        <div className="max-w-7xl mx-auto px-6 text-center flex">
-          <div className='left-part ' >
+      <section className="bg-gray-950  md:py-32 text-white">
+        <div className=" pt-24 max-w-7xl mx-auto px-6 text-center flex ">
+          <div className='left-part text-left flex-col ' >
 
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-shadow-">
+            <div className="text-5xl  font-extrabold leading-tight ">
               We Help Businesses Pre-Qualify For Financing & Build Business Credit
-              <span className="text-yellow-500">:</span>
-            </h1>
-            <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+              <span className="text-yellow-400">:</span>
+            </div>
+            <p className="mt-6 text-2xl md:text-xl text-gray-100 mx-auto">
               Unlock your business's full potential with our expert guidance in
               securing funding and establishing a strong credit profile.
             </p></div>
-          <div className='right-part' >
-            <button className="mt-10 bg-yellow-600 text-black font-bold py-3 px-8 uppercase tracking-widest hover:bg-yellow-500 transition-colors">
-              Get Started Today
+          <div className="right-part flex items-center justify-center " >
+            <button className=" bg-yellow-400 text-black font-bold py-3 px-8  tracking-widest hover:bg-yellow-500 transition-colorss w-xl rounded-3xl h-16  ">
+              Run Your Free Pre-Qualification Scan To Find Out
             </button>
           </div>
         </div>
       </section>
 
       <section className="pt-32 pb-20 px-4 text-center">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Discover Our <span className="text-yellow-500">Approach</span>
           </h1>
           {/* Video Placeholder Box from PDF */}
-          <div className="relative w-full max-w-2xl mx-auto aspect-video bg-zinc-900 border-2 border-yellow-600 shadow-[0_0_30px_rgba(202,138,4,0.3)] flex items-center justify-center mb-10 group cursor-pointer">
-            <div className="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-              <div className="w-0 h-0 border-t-8 border-t-transparent border-l-[16px] border-l-black border-b-8 border-b-transparent ml-1"></div>
-            </div>
+          <div className="relative w-full max-w-2xl mx-auto aspect-video bg-zinc-900 border-yellow-400 shadow-[0_0_30px_rgba(202,138,4,0.3)] flex items-center justify-center mb-10 group cursor-pointer min-h-150 min-w-250 border-30">
+            {/* <div className="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform"> */}
+            <video controls width="1280" >
+              <source src="assets/Woman in business.mp4" type="video/mp4" />
+            </video>
+
+            {/* </div> */}
           </div>
-          <button className="bg-yellow-600 text-black font-bold py-3 px-8 uppercase tracking-widest hover:bg-yellow-500 transition-colors">
+          <button className="bg-yellow-400 text-black font-bold py-3 px-16 uppercase tracking-widest hover:bg-yellow-500 transition-colors rounded-4xl ">
             Book Your Consultation
           </button>
         </div>
